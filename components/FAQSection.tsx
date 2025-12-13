@@ -33,7 +33,7 @@ export default function FAQSection() {
       </svg>
 
       {/* FAQ Content */}
-      <div className="max-w-[1000px] px-4 pt-[10px] pb-[80px] sm:px-6 lg:max-w-[940px] lg:pt-[10px] lg:pb-[100px] mx-auto relative z-10">
+      <div className="max-w-[1000px] px-4 pt-[10px] pb-[10px] sm:px-6 lg:max-w-[940px] lg:pt-[10px] lg:pb-[10px] mx-auto relative z-10">
         <div className="max-w-[1000px] mx-auto text-center mb-5 lg:mb-0">
           <h2 className="text-[35px] font-bold md:text-[50px] md:leading-tight">
             Frequently Asked Questions
@@ -41,7 +41,7 @@ export default function FAQSection() {
 
           <Link
             href="/faq"
-            className="bg-white ring-1 mt-10 ring-black text-black px-10 py-4 rounded-md text-lg font-semibold cursor-pointer hover:shadow-sm hover:shadow-gray hover:bg-orange-100 inline-block"
+            className="bg-white mt-8 text-black px-10 py-4 rounded-md text-lg font-semibold cursor-pointer hover:shadow-sm hover:shadow-gray hover:bg-orange-100 inline-block"
           >
             See FAQ
           </Link>

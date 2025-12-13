@@ -38,7 +38,7 @@ export default function HeroSection() {
           >
             Check Plans
           </a>
-          <div className="max-w-7xl mx-auto px-0 lg:pt-[25px]">
+          <div className="max-w-7xl mx-auto px-0 pt-[30px]">
             {isMobile ? (
               <img 
               src="/images/frame.svg"

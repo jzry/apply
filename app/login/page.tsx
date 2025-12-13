@@ -42,22 +42,17 @@ export default function AuthPage() {
     </nav>
 
       {/* Main Content */}
-      <div className="flex-1 flex items-center justify-center px-4 pt-32 pb-16">
+      <div className="flex-1 flex items-center justify-center px-4 pt-32 pb-10">
         <div className="max-w-md w-full">
           {/* Header */}
           <div className="text-center mb-8">
-            <h1 className="text-4xl font-semibold text-black mb-3">
-              {isLogin ? 'Welcome Back' : 'Get Started'}
+            <h1 className="text-3xl font-normal text-black mb-3">
+              {isLogin ? 'Sign in' : 'Get started'}
             </h1>
-            <p className="text-gray-600 text-lg">
-              {isLogin 
-                ? 'Sign in to access your dashboard' 
-                : 'Create an account to start applying to jobs'}
-            </p>
           </div>
 
           {/* Auth Card */}
-          <div className="bg-white rounded-3xl shadow-xl ring-1 ring-black p-8">
+          <div className="bg-white rounded-3xl p-8">
             {/* Toggle Tabs */}
             <div className="flex gap-2 mb-8 bg-gray-100 rounded-lg p-1">
               <button
@@ -86,9 +81,6 @@ export default function AuthPage() {
             <div className="space-y-5">
               {!isLogin && (
                 <div>
-                  <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Full Name
-                  </label>
                   <input
                     type="text"
                     id="name"
@@ -96,15 +88,12 @@ export default function AuthPage() {
                     value={formData.name}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all"
-                    placeholder="John Doe"
+                    placeholder="Full Name"
                   />
                 </div>
               )}
 
               <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
-                  Email Address
-                </label>
                 <input
                   type="email"
                   id="email"
@@ -112,14 +101,11 @@ export default function AuthPage() {
                   value={formData.email}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all"
-                  placeholder="you@example.com"
+                  placeholder="Email Address"
                 />
               </div>
 
               <div>
-                <label htmlFor="password" className="block text-sm font-semibold text-gray-700 mb-2">
-                  Password
-                </label>
                 <input
                   type="password"
                   id="password"
@@ -127,26 +113,9 @@ export default function AuthPage() {
                   value={formData.password}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all"
-                  placeholder="••••••••"
+                  placeholder="Password"
                 />
               </div>
-
-              {!isLogin && (
-                <div>
-                  <label htmlFor="confirmPassword" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Confirm Password
-                  </label>
-                  <input
-                    type="password"
-                    id="confirmPassword"
-                    name="confirmPassword"
-                    value={formData.confirmPassword}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all"
-                    placeholder="••••••••"
-                  />
-                </div>
-              )}
 
               {isLogin && (
                 <div className="flex items-center justify-between text-sm">
@@ -162,7 +131,7 @@ export default function AuthPage() {
 
               <button
                 onClick={handleSubmit}
-                className="cursor-pointer w-full bg-gradient-to-t from-orange-500 to-red-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gradient-to-bl hover:from-red-450 hover:to-orange-500 transition-all focus:ring-4 focus:outline-none focus:ring-red-100"
+                className="cursor-pointer w-full bg-gradient-to-t from-orange-500 to-red-500 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gradient-to-bl hover:from-red-450 hover:to-orange-500 transition-all focus:ring-4 focus:outline-none focus:ring-red-100"
               >
                 {isLogin ? 'Sign In' : 'Create Account'}
               </button>
@@ -174,7 +143,7 @@ export default function AuthPage() {
                 <div className="w-full border-t border-gray-200"></div>
               </div>
               <div className="relative flex justify-center text-sm">
-                <span className="px-4 bg-white text-gray-500">Or continue with</span>
+                <span className="px-4 bg-white text-gray-500">OR</span>
               </div>
             </div>
 
