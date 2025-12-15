@@ -8,7 +8,7 @@ export default function Footers() {
           <div>
             <h3 className="flex items-center gap-1">
               <a href="/" className="text-xl font-bold text-black bg-clip-text mb-2">
-                ApplyToJobs
+                apply
               </a>
               <img src="/images/icon.svg" alt="Company Logo" className="w-5 h-5 mb-2" />
             </h3>
@@ -25,7 +25,7 @@ export default function Footers() {
               </li>
               <li>
               </li>
-              <li><a href="#pricing" className="text-gray-600 hover:underline">Pricing</a></li>
+              <li><a href="/pricing" className="text-gray-600 hover:underline">Pricing</a></li>
             </ul>
           </div>
 

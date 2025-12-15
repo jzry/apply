@@ -1,5 +1,10 @@
 import Footer from "@/components/Footer";
+import ListSVG from "@/components/ListSVG";
 import Navbar from "@/components/Navbar";
+import RecruiterSVG from "@/components/RecruiterSVG";
+import ResumeSVG from "@/components/ResumeSVG";
+import StatusSVG from "@/components/StatusSVG";
+import VoiceSVG from "@/components/VoiceSVG";
 
 export default function Features() {
   return (
@@ -33,13 +38,14 @@ export default function Features() {
                 </ul>
               </div>
               <div className="flex-1 flex justify-center">
-                <img 
-                  src="/images/recruiter-outreach.svg" 
+                {/* <img 
+                  src="/images/card-1.svg" 
                   alt="Recruiter Outreach"
                   width="400" 
                   height="400" 
                   className="w-full max-w-md"
-                />
+                /> */}
+                <RecruiterSVG />
               </div>
             </div>
 
@@ -68,13 +74,14 @@ export default function Features() {
                 </ul>
               </div>
               <div className="flex-1 flex justify-center">
-                <img 
+                {/* <img 
                   src="/images/custom-messages.svg" 
                   alt="Custom Messages"
                   width="400" 
                   height="400" 
                   className="w-full max-w-md"
-                />
+                /> */}
+                <VoiceSVG />
               </div>
             </div>
 
@@ -104,13 +111,14 @@ export default function Features() {
                 </ul>
               </div>
               <div className="flex-1 flex justify-center">
-                <img 
+                {/* <img 
                   src="/images/target-companies.svg" 
                   alt="Target Companies"
                   width="400" 
                   height="400" 
                   className="w-full max-w-md"
-                />
+                /> */}
+                <ListSVG />
               </div>
             </div>
 
@@ -139,13 +147,14 @@ export default function Features() {
                 </ul>
               </div>
               <div className="flex-1 flex justify-center">
-                <img 
+                {/* <img 
                   src="/images/dashboard.svg" 
                   alt="Dashboard"
                   width="400" 
                   height="400" 
                   className="w-full max-w-md"
-                />
+                /> */}
+                <StatusSVG />
               </div>
             </div>
 
@@ -174,13 +183,14 @@ export default function Features() {
                 </ul>
               </div>
               <div className="flex-1 flex justify-center">
-                <img 
+                {/* <img 
                   src="/images/resume-review.svg" 
                   alt="Resume Review"
                   width="400" 
                   height="400" 
                   className="w-full max-w-md"
-                />
+                /> */}
+                <ResumeSVG />
               </div>
             </div>
         </div>
