@@ -10,7 +10,7 @@ export default function Features() {
   return (
     <section className="min-h-screen bg-white">
         <Navbar />
-        <div className="max-w-[940px] mx-auto pt-30 pb-20 space-y-16">
+        <div className="max-w-[940px] mx-[auto] pt-30 pb-20 px-[30px] space-y-16">
 
             {/* Feature 1: Direct Recruiter Outreach */}
             <div className="flex flex-col lg:flex-row gap-8 items-center">

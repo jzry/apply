@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GradientWave from "@/components/GradientWave";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -9,10 +10,10 @@ export default function AboutPage() {
 
     <Navbar />
       {/* Hero Section */}
-      <section className="pt-[100px] sm:pt-40 pb-[60px] px-4">
+      <section className="pt-[100px] sm:pt-40 pb-[40px] px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-semibold text-black mb-6">
-            About ApplyToJobs
+            About Us
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
             We're on a mission to simplify job searching and help you land your dream job faster.
@@ -21,7 +22,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Story Section */}
-      <section className="px-4 pb-[80px]">
+      <section className="px-4 pb-[0px]">
         <div className="max-w-[940px] mx-auto">
           <div className="flex flex-col lg:flex-row gap-12 items-center mb-20">
             <div className="flex-1">
@@ -29,18 +30,15 @@ export default function AboutPage() {
                 Our Story
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                ApplyToJobs was founded on a simple observation: job searching is broken. Talented professionals spend countless hours filling out redundant applications, only to hear nothing back.
+                Apply was founded on a simple observation: job searching is broken. Talented professionals spend countless hours filling out redundant applications, only to hear nothing back.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                We knew there had to be a better way. By combining human expertise with efficient processes, we've created a service that applies to hundreds of jobs on your behalf while maintaining the quality and personal touch that gets results.
-              </p>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                Today, we've helped thousands of job seekers save time and increase their interview rates by up to 5x.
+                We knew there had to be a better way. By combining human expertise with custom built automation software, we've created a service to help you save time maintaining the quality and personal touch that gets results.
               </p>
             </div>
             <div className="flex-1">
               <img 
-                src="/images/our-story.svg" 
+                src="/images/OurStory.png" 
                 alt="Our Story"
                 width="500" 
                 height="500" 
@@ -51,9 +49,27 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Team Section (Optional) */}
+      {/* <section className="px-4 py-[80px]">
+        <div className="max-w-[940px] mx-auto">
+          <h2 className="text-4xl font-semibold text-black text-center mb-12">
+            Meet the Team
+          </h2>
+            <div className="text-center">
+              <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="text-4xl">👤</span>
+              </div>
+              <Link href="https://www.linkedin.com/in//" className="cursor-pointer text-xl font-semibold text-blue-500 mb-1 hover:underline">
+                LinkedIn
+              </Link>
+              <p className="text-orange-600 font-semibold mb-2">Owner</p>
+            </div>
+        </div>
+      </section> */}
+
       {/* Mission & Values Section */}
-      <section className="px-4 pb-[80px] bg-gray-50">
-        <div className="max-w-[940px] mx-auto py-16">
+      <section className="px-4 pb-[80px] bg-white">
+        <div className="max-w-[940px] mx-auto">
           <h2 className="text-4xl font-semibold text-black text-center mb-12">
             Our Mission & Values
           </h2>
@@ -68,7 +84,7 @@ export default function AboutPage() {
                 Our Mission
               </h3>
               <p className="text-gray-700 text-lg leading-relaxed">
-                To empower every job seeker with the tools and support they need to land their dream job, eliminating the tedious parts of job searching so they can focus on what matters most.
+                To empower every job seeker to land their dream job, eliminating the tedious parts of job searching so they can focus on what matters most.
               </p>
             </div>
 
@@ -144,10 +160,10 @@ export default function AboutPage() {
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl font-semibold text-black mb-3">
-                  Vetted Freelance Team
+                  Select Preferences
                 </h3>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  We work with a carefully vetted team of freelancers from around the world. Each team member undergoes extensive background checks and training to ensure they meet our high standards for quality and professionalism.
+                  Select the job preferences that you have, upload your resume, and approve messages we can send out on your behalf.
                 </p>
               </div>
             </div>
@@ -161,10 +177,10 @@ export default function AboutPage() {
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl font-semibold text-black mb-3">
-                  Privacy-First Approach
+                  Resume Review
                 </h3>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  Your privacy is paramount. We create email aliases and use Google Voice numbers so our freelancers never have access to your real contact information. Once your order is complete, we delete your resume entirely.
+                  We review your resume, provide feedback, and work with you to optimize it.
                 </p>
               </div>
             </div>
@@ -178,10 +194,12 @@ export default function AboutPage() {
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl font-semibold text-black mb-3">
-                  Quality Assurance
+                  Application Phase
                 </h3>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  Before we begin, our team reviews your resume to ensure it's ready for mass applications. We provide feedback and work with you to optimize it. Our freelancers are incentivized based on your success—they earn more when you get interviews and job offers.
+                  We use our own custom job scraper to crawl every job board, company website, and LinkedIn post to help you find relevant roles that match your job preferences.
+                  We apply directly on company websites and reach out to HR and email the relevant recruiter.
+                  You can keep an update of where we apply and what messages we send out on our dashboard.
                 </p>
               </div>
             </div>
@@ -190,7 +208,7 @@ export default function AboutPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="px-4 py-[80px] bg-gradient-to-br from-orange-400 via-red-500 to-yellow-400">
+      {/* <section className="px-4 py-[80px] bg-gradient-to-br from-orange-400 via-red-500 to-yellow-400">
         <div className="max-w-[940px] mx-auto">
           <h2 className="text-4xl font-semibold text-white text-center mb-16">
             Our Impact
@@ -213,54 +231,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Team Section (Optional) */}
-      <section className="px-4 py-[80px]">
-        <div className="max-w-[940px] mx-auto">
-          <h2 className="text-4xl font-semibold text-black text-center mb-12">
-            Meet the Team
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Team Member 1 */}
-            <div className="text-center">
-              <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-4xl">👤</span>
-              </div>
-              <h4 className="text-xl font-semibold text-black mb-1">John Smith</h4>
-              <p className="text-orange-600 font-semibold mb-2">CEO & Founder</p>
-              <p className="text-gray-700 text-sm">
-                Former recruiter with 10+ years of experience in talent acquisition.
-              </p>
-            </div>
-
-            {/* Team Member 2 */}
-            <div className="text-center">
-              <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-4xl">👤</span>
-              </div>
-              <h4 className="text-xl font-semibold text-black mb-1">Sarah Johnson</h4>
-              <p className="text-orange-600 font-semibold mb-2">Head of Operations</p>
-              <p className="text-gray-700 text-sm">
-                Oversees our freelance team and ensures quality standards are met.
-              </p>
-            </div>
-
-            {/* Team Member 3 */}
-            <div className="text-center">
-              <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-4xl">👤</span>
-              </div>
-              <h4 className="text-xl font-semibold text-black mb-1">Mike Chen</h4>
-              <p className="text-orange-600 font-semibold mb-2">Head of Technology</p>
-              <p className="text-gray-700 text-sm">
-                Builds the tools and systems that power our application process.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      </section> */}
 
       <section>
         <Footer />

@@ -8,14 +8,14 @@ export default function VoiceSVG() {
         >
           <defs>
             <linearGradient id="bgGradient2" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#ff9a3c" />
-              <stop offset="50%" stop-color="#ff4d4d" />
-              <stop offset="100%" stop-color="#ffd166" />
+              <stop offset="0%" stopColor="#ff9a3c" />
+              <stop offset="50%" stopColor="#ff4d4d" />
+              <stop offset="100%" stopColor="#ffd166" />
             </linearGradient>
 
             <linearGradient id="cardGradient2" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
-              <stop offset="100%" stop-color="#ffffff" stop-opacity="0.85" />
+              <stop offset="0%" stopColor="#ffffff" stopOpacity="0.95" />
+              <stop offset="100%" stopColor="#ffffff" stopOpacity="0.85" />
             </linearGradient>
           </defs>
 
@@ -42,8 +42,8 @@ export default function VoiceSVG() {
           <path
             d="M124 179l12 12M136 179l-12 12"
             stroke="#fff"
-            stroke-width="2"
-            stroke-linecap="round"
+            strokeWidth="2"
+            strokeLinecap="round"
           />
 
           <rect
@@ -54,7 +54,7 @@ export default function VoiceSVG() {
             rx="20"
             fill="url(#cardGradient2)"
             stroke="#ffffff"
-            stroke-opacity="0.6"
+            strokeOpacity="0.6"
           />
 
           <rect x="240" y="85" width="110" height="12" rx="6" fill="#ff6b35" />
@@ -66,9 +66,9 @@ export default function VoiceSVG() {
           <path
             d="M332 185h10M338 179l8 6-8 6"
             stroke="#fff"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
      </svg>
   );

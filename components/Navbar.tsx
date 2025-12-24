@@ -25,7 +25,6 @@ const Navbar = () => {
   const navLinks: NavLink[] = [
     { name: 'Features', href: '/features' },
     { name: 'Pricing', href: '/pricing' },
-    { name: 'Company', href: '/about' },
   ];
 
   return (
@@ -41,7 +40,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1.5">
+          <div className="hidden md:flex items-center space-x-2">
             {navLinks.map((link) => (
               <a 
                 key={link.name} 

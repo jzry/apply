@@ -23,10 +23,10 @@ export default function HeroSection() {
     <section className="pt-[100px] sm:pt-40 pb-[0px] px-4">
       <div className="max-w-7xl mx-auto text-center">
         <h1 className="text-4xl md:text-7xl font-semibold text-black mb-8">
-          Apply to 100 jobs in 1 minute.
+          Apply to 100 jobs in 1 minute
         </h1>
         <p className="text-xl text-gray-700 mb-8 max-w-1xl mx-auto">
-          Our team of freelancers applies to jobs and messages hiring managers on your behalf.
+          Our team applies to jobs and messages hiring managers on your behalf.
         </p>
         <div>
           <Link href="/login" className="cursor-pointer bg-orange-600 text-white px-8 py-4 rounded-md text-lg font-semibold bg-gradient-to-r from-red-500 to-orange-450 hover:bg-gradient-to-bl from-red-450 to-orange-500 focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-center me-2 mb-2">

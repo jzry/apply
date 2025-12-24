@@ -8,14 +8,14 @@ export default function CompanySVG() {
     >
       <defs>
         <linearGradient id="bgGradient3" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="#ff9a3c" />
-          <stop offset="50%" stop-color="#ff4d4d" />
-          <stop offset="100%" stop-color="#ffd166" />
+          <stop offset="0%" stopColor="#ff9a3c" />
+          <stop offset="50%" stopColor="#ff4d4d" />
+          <stop offset="100%" stopColor="#ffd166" />
         </linearGradient>
 
         <linearGradient id="sheetGradient" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#ffffff" stop-opacity="0.97" />
-          <stop offset="100%" stop-color="#ffffff" stop-opacity="0.9" />
+          <stop offset="0%" stopColor="#ffffff" stopOpacity="0.97" />
+          <stop offset="100%" stopColor="#ffffff" stopOpacity="0.9" />
         </linearGradient>
       </defs>
 
@@ -33,21 +33,21 @@ export default function CompanySVG() {
         rx="18"
         fill="url(#sheetGradient)"
         stroke="#ffffff"
-        stroke-opacity="0.6"
+        strokeOpacity="0.6"
       />
 
       <rect x="60" y="60" width="300" height="34" rx="18" fill="#f3f4f6" />
       <rect x="85" y="72" width="80" height="10" rx="5" fill="#9ca3af" />
       <rect x="185" y="72" width="80" height="10" rx="5" fill="#9ca3af" />
 
-      <g fill="#9ca3af" font-size="10" font-family="monospace">
+      <g fill="#9ca3af" fontSize="10" fontFamily="monospace">
         <text x="70" y="115">1</text>
         <text x="70" y="145">2</text>
         <text x="70" y="175">3</text>
         <text x="70" y="205">4</text>
       </g>
 
-      <g stroke="#e5e7eb" stroke-width="1">
+      <g stroke="#e5e7eb" strokeWidth="1">
         <line x1="85" y1="100" x2="350" y2="100" />
         <line x1="85" y1="130" x2="350" y2="130" />
         <line x1="85" y1="160" x2="350" y2="160" />
@@ -77,7 +77,7 @@ export default function CompanySVG() {
       <path
         d="M104 205l3 3 6-6"
         stroke="#fff"
-        stroke-width="2"
+        strokeWidth="2"
         fill="none"
       />
 

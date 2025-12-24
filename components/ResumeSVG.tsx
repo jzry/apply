@@ -8,14 +8,14 @@ export default function VoiceSVG() {
     >
       <defs>
         <linearGradient id="bgGradientResume" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="#ff9a3c" />
-          <stop offset="50%" stop-color="#ff4d4d" />
-          <stop offset="100%" stop-color="#ffd166" />
+          <stop offset="0%" stopColor="#ff9a3c" />
+          <stop offset="50%" stopColor="#ff4d4d" />
+          <stop offset="100%" stopColor="#ffd166" />
         </linearGradient>
     
         <linearGradient id="resumeCard" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#ffffff" stop-opacity="0.97" />
-          <stop offset="100%" stop-color="#ffffff" stop-opacity="0.9" />
+          <stop offset="0%" stopColor="#ffffff" stopOpacity="0.97" />
+          <stop offset="100%" stopColor="#ffffff" stopOpacity="0.9" />
         </linearGradient>
       </defs>
 
@@ -33,7 +33,7 @@ export default function VoiceSVG() {
         rx="16"
         fill="url(#resumeCard)"
         stroke="#ffffff"
-        stroke-opacity="0.6"
+        strokeOpacity="0.6"
       />
 
       <rect x="165" y="62" width="90" height="14" rx="7" fill="#ff6b35" />
@@ -59,7 +59,7 @@ export default function VoiceSVG() {
         height="40"
         rx="12"
         fill="#ffffff"
-        fill-opacity="0.95"
+        fillOpacity="0.95"
       />
       <rect x="65" y="114" width="60" height="8" rx="4" fill="#c7d2fe" />
       <rect x="65" y="126" width="45" height="6" rx="3" fill="#c7d2fe" />
@@ -71,7 +71,7 @@ export default function VoiceSVG() {
         height="40"
         rx="12"
         fill="#ffffff"
-        fill-opacity="0.95"
+        fillOpacity="0.95"
       />
       <rect x="295" y="114" width="70" height="8" rx="4" fill="#dcfce7" />
       <rect x="295" y="126" width="50" height="6" rx="3" fill="#dcfce7" />
@@ -80,7 +80,7 @@ export default function VoiceSVG() {
       <path
         d="M250 68l3 3 6-6"
         stroke="#ffffff"
-        stroke-width="2"
+        strokeWidth="2"
         fill="none"
       />
     </svg>
